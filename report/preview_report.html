@@ -1,0 +1,150 @@
+
+    <html>
+    <head>
+        <style>
+            body { font-family: Arial, sans-serif; max-width: 800px;
+                    margin: 0 auto; padding: 20px; color: #333; }
+            h1   { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+            h2   { color: #2980b9; margin-top: 30px; }
+            .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 20px 0; }
+            .kpi { background: #f8f9fa; border-left: 4px solid #3498db;
+                    padding: 15px; border-radius: 4px; }
+            .kpi .value { font-size: 28px; font-weight: bold; color: #2c3e50; }
+            .kpi .label { font-size: 12px; color: #7f8c8d; margin-top: 5px; }
+            table  { width: 100%; border-collapse: collapse; margin-top: 10px; }
+            th     { background: #3498db; color: white; padding: 10px; text-align: left; }
+            td     { padding: 8px 10px; border-bottom: 1px solid #eee; }
+            tr:nth-child(even) { background: #f8f9fa; }
+        </style>
+    </head>
+    <body>
+        <h1>Weekly Books Report</h1>
+        <p>Scraped on: <strong>2026-06-26</strong></p>
+
+        <div class="kpi-grid">
+            <div class="kpi"><div class="value">1000</div>
+                <div class="label">Total Books</div></div>
+            <div class="kpi"><div class="value">$5.04</div>
+                <div class="label">Avg Price</div></div>
+            <div class="kpi"><div class="value">2.92</div>
+                <div class="label">Avg Rating</div></div>
+            <div class="kpi"><div class="value">1000</div>
+                <div class="label">In Stock</div></div>
+        </div>
+
+        <h2>Top rated books under lowest price</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>title</th>
+      <th>price</th>
+      <th>rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>An Abundance of Katherines</td>
+      <td>0.00</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>No One Here Gets Out Alive</td>
+      <td>0.02</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>God: The Most Unpleasant Character in All Fiction</td>
+      <td>0.03</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Everyday Italian: 125 Simple and Delicious Recipes</td>
+      <td>0.10</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Team of Rivals: The Political Genius of Abraham Lincoln</td>
+      <td>0.12</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+        <h2>Cheapest books</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>title</th>
+      <th>price</th>
+      <th>rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Under the Banner of Heaven: A Story of Violent Faith</td>
+      <td>0.00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>An Abundance of Katherines</td>
+      <td>0.00</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>The Origin of Species</td>
+      <td>0.01</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>The Tipping Point: How Little Things Can Make a Big Difference</td>
+      <td>0.02</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Run, Spot, Run: The Ethics of Keeping Pets</td>
+      <td>0.02</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+        <h2>Books by rating</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>rating</th>
+      <th>count</th>
+      <th>avg_price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>226</td>
+      <td>5.18</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>196</td>
+      <td>5.17</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>203</td>
+      <td>4.84</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>179</td>
+      <td>4.81</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>196</td>
+      <td>5.17</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
